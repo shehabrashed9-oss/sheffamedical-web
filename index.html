@@ -2,72 +2,93 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Al Shefaa Medical Complex — Coming soon to Yanbu</title>
-<meta name="description" content="Al Shefaa Alkamel General Medical Clinics, Yanbu. A new standard of care is coming soon. مجمع الشفاء الكامل الطبي العام — ينبع.">
-<meta name="theme-color" content="#F6F9FA">
-<link rel="icon" href="/assets/favicon.png">
-<link rel="apple-touch-icon" href="/assets/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sheffamedical.com/">
-<meta property="og:title" content="Al Shefaa Medical Complex — Coming soon to Yanbu">
-<meta property="og:description" content="A new standard of care is coming to Yanbu.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Al Shefaa Medical Complex — Coming soon</title>
+<meta name="description" content="Al Shefaa Alkamel General Medical Clinics, Yanbu. Our new website is coming soon.">
+<meta name="theme-color" content="#14348F">
+<link rel="icon" href="assets/favicon.png">
+<meta property="og:title" content="Al Shefaa Medical Complex — Coming soon">
+<meta property="og:description" content="Al Shefaa Alkamel General Medical Clinics, Yanbu.">
 <meta property="og:image" content="https://sheffamedical.com/assets/og.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="/assets/film.mp4" as="video" type="video/mp4">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"Al Shefaa Alkamel General Medical Clinics","alternateName":"مجمع الشفاء الكامل الطبي العام","url":"https://sheffamedical.com","telephone":"+966143225499","address":{"@type":"PostalAddress","streetAddress":"Omar Bin Al Khattab Street","addressLocality":"Yanbu","addressCountry":"SA"},"sameAs":["https://www.instagram.com/sheffamedical","https://www.tiktok.com/@sheffamedical","https://www.snapchat.com/add/sheffamedical","https://x.com/sheffamedical"]}</script>
+<meta property="og:url" content="https://sheffamedical.com/">
 <style>
-@font-face{font-family:Serif;src:url(/assets/instrument-serif-latin-400-normal.woff2) format("woff2");font-display:swap}
-@font-face{font-family:SerifI;src:url(/assets/instrument-serif-latin-400-italic.woff2) format("woff2");font-display:swap}
-@font-face{font-family:Inter;font-weight:400;src:url(/assets/inter-latin-400-normal.woff2) format("woff2");font-display:swap}
-@font-face{font-family:Inter;font-weight:500;src:url(/assets/inter-latin-500-normal.woff2) format("woff2");font-display:swap}
-@font-face{font-family:UB;src:url(/assets/brands.woff2) format("woff2")}
-@font-face{font-family:UR;src:url(/assets/rr.woff2) format("woff2")}
+@font-face{font-family:OF;font-weight:200;src:url(fonts/outfit-latin-200-normal.woff2)}
+@font-face{font-family:OF;font-weight:300;src:url(fonts/outfit-latin-300-normal.woff2)}
+@font-face{font-family:OF;font-weight:400;src:url(fonts/outfit-latin-400-normal.woff2)}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{min-height:100%;background:#F6F9FA;color:#0A404F;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100svh;padding:clamp(20px,4vh,48px) 20px}
-.film{position:relative;width:min(76svh,92vw,820px);aspect-ratio:1;border-radius:clamp(18px,2.4vw,30px);overflow:hidden;
- background:#E9F0F3 url(/assets/poster.jpg) center/cover;box-shadow:0 30px 80px -30px rgba(10,64,79,.28),0 2px 6px rgba(10,64,79,.06)}
-.film video{width:100%;height:100%;object-fit:cover;display:block}
-.snd{position:absolute;right:14px;bottom:14px;height:36px;padding:0 14px;border-radius:18px;border:1px solid rgba(255,255,255,.6);
- background:rgba(255,255,255,.28);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font:500 13px Inter;letter-spacing:.3px;cursor:pointer}
-.snd:focus-visible,.btn:focus-visible,.soc a:focus-visible{outline:2px solid #0F809E;outline-offset:3px}
-.row{margin-top:clamp(18px,3vh,30px);display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-.btn{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 22px;border-radius:24px;border:1px solid rgba(10,64,79,.18);
- background:#fff;color:#0A404F;text-decoration:none;font:500 15px Inter;transition:border-color .3s,transform .3s}
-.btn:hover{border-color:#0F809E;transform:translateY(-1px)}
-.btn.wa{background:#0A404F;color:#fff;border-color:#0A404F}
-.ib{font-family:UB;font-size:18px;line-height:1}.ir{font-family:UR;font-size:17px;line-height:1}
-.ar{margin-top:16px;font:400 15px Inter;color:#5D7C86;direction:rtl;text-align:center;max-width:92vw}
-.soc{margin-top:14px;display:flex;gap:18px;align-items:center}.soc .ib{font-size:19px}
-.soc a{color:#0A404F;text-decoration:none;opacity:.7;transition:opacity .3s}.soc a:hover{opacity:1}
-.soc .h{font:500 14px Inter;letter-spacing:.5px;color:#5D7C86}
-@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+html,body{width:100%;height:100%;overflow:hidden;background:#13318F url(img/bg_blue.jpg) center/cover;font-family:OF;color:#fff}
+#comp{position:fixed;inset:0;width:100%;height:100%;border:0;display:block}
+/* glass pane lowered over the design: clear glass, 30% blur */
+#pane{position:fixed;inset:var(--m);border-radius:var(--r);overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,.03) 50%,rgba(255,255,255,.06) 100%);
+  backdrop-filter:blur(var(--bl)) saturate(125%);-webkit-backdrop-filter:blur(var(--bl)) saturate(125%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 0 0 1px rgba(255,255,255,.18),0 40px 100px -30px rgba(0,8,50,.45);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--gap);will-change:transform}
+#pedge{position:fixed;inset:var(--m);border-radius:var(--r);padding:1.6px;pointer-events:none;will-change:transform;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+#sheen{position:absolute;inset:-30%;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.09) 49%,transparent 56%);pointer-events:none}
+.soon{display:flex;align-items:center;gap:var(--dg);font-weight:300;font-size:var(--sf);letter-spacing:.42em;margin-right:-.42em;text-transform:lowercase;color:#fff;text-shadow:0 0 10px rgba(255,255,255,.7),0 0 26px rgba(200,230,255,.45)}
+.dot{position:relative;width:var(--ds);height:var(--ds);border-radius:50%;background:#B9FF7A;
+  box-shadow:0 0 10px #B9FF7A,0 0 24px rgba(170,255,100,.8)}
+.ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(190,255,130,.9)}
+.cd{display:flex;align-items:flex-start;gap:var(--cg)}
+.u{display:flex;flex-direction:column;align-items:center;gap:var(--lg)}
+.num{display:flex;font-weight:200;font-size:var(--nf);line-height:.9;letter-spacing:-.01em;color:#fff;text-shadow:0 0 6px rgba(255,255,255,.95),0 0 18px rgba(255,255,255,.75),0 0 42px rgba(200,230,255,.55),0 0 80px rgba(160,210,255,.35)}
+.num span{display:inline-block;width:.6em;text-align:center}
+.lab{font-weight:400;font-size:var(--lf);letter-spacing:.38em;margin-right:-.38em;color:rgba(255,255,255,.85);text-shadow:0 0 10px rgba(255,255,255,.6)}
+.sep{font-weight:200;font-size:var(--nf);line-height:.9;color:rgba(255,255,255,.55);text-shadow:0 0 14px rgba(255,255,255,.6);transform:translateY(-.04em)}
+:root{--bl:12px;--m:0px;--r:0px;--gap:4.2vmin;--sf:clamp(16px,2.6vmin,34px);--ds:clamp(8px,1.1vmin,14px);--dg:1.6vmin;
+  --nf:min(12vw,19vh);--lf:clamp(9px,1.25vmin,15px);--cg:2.2vmin;--lg:1.8vmin}
+@media (max-aspect-ratio:4/5){
+  :root{--bl:4.7px;--m:0px;--r:0px;--gap:4vh;--sf:clamp(14px,4.6vw,30px);--ds:clamp(8px,2.2vw,14px);--dg:3vw;
+    --nf:min(12.4vw,8vh);--lf:clamp(8px,2.2vw,13px);--cg:1.6vw;--lg:1.4vh}
+}
 </style>
 </head>
 <body>
-<main style="display:flex;flex-direction:column;align-items:center">
- <div class="film">
-  <video id="v" src="/assets/film.mp4" poster="/assets/poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Al Shefaa Medical Complex, coming soon to Yanbu"></video>
-  <button class="snd" id="snd" type="button">Sound on</button>
- </div>
- <div class="row">
-  <a class="btn wa" href="https://wa.me/966545580231" target="_blank" rel="noopener"><span class="ib">&#xf1d2;</span>WhatsApp</a>
-  <a class="btn" href="tel:+966143225499"><span class="ir">&#xfa61;</span>014 322 5499</a>
- </div>
- <p class="ar">مجمع الشفاء الكامل الطبي العام — شارع عمر بن الخطاب، ينبع</p>
- <div class="soc">
-  <a href="https://www.instagram.com/sheffamedical" target="_blank" rel="noopener" aria-label="Instagram"><span class="ib">&#xf16e;</span></a>
-  <a href="https://www.tiktok.com/@sheffamedical" target="_blank" rel="noopener" aria-label="TikTok"><span class="ib">&#xf1b9;</span></a>
-  <a href="https://www.snapchat.com/add/sheffamedical" target="_blank" rel="noopener" aria-label="Snapchat"><span class="ib">&#xf1a7;</span></a>
-  <a href="https://x.com/sheffamedical" target="_blank" rel="noopener" aria-label="X"><span class="ib">&#xf1c0;</span></a>
-  <span class="h">@sheffamedical</span>
- </div>
-</main>
+<iframe id="comp" title="Al Shefaa clinics" tabindex="-1"></iframe>
+<div id="pane">
+  <div id="sheen"></div>
+  <div class="soon"><span class="dot"><span class="ring" id="r1"></span><span class="ring" id="r2"></span></span>soon</div>
+  <div class="cd" aria-label="Countdown">
+    <div class="u"><div class="num" id="dd"></div><div class="lab">DAYS</div></div><div class="sep">:</div>
+    <div class="u"><div class="num" id="hh"></div><div class="lab">HOURS</div></div><div class="sep">:</div>
+    <div class="u"><div class="num" id="mm"></div><div class="lab">MINUTES</div></div><div class="sep">:</div>
+    <div class="u"><div class="num" id="ss"></div><div class="lab">SECONDS</div></div>
+  </div>
+</div>
+
 <script>
-const v=document.getElementById('v'),b=document.getElementById('snd');
-b.onclick=()=>{v.muted=!v.muted;if(!v.muted){v.currentTime=0;v.play()}b.textContent=v.muted?'Sound on':'Sound off'};
-if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause()}
+const TARGET=Date.parse('2026-12-11T08:00:00+03:00');   // 25 days from 16 Nov 2026, 08:00 Yanbu
+const q=new URLSearchParams(location.search), RENDER=q.has('render');
+const mobile=q.get('mode')?q.get('mode')==='mobile':(innerWidth/innerHeight<0.8);
+const comp=document.getElementById('comp');
+comp.src=(mobile?'mobile.html':'desktop.html')+(RENDER?'?render':'');
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+function spring(t,f=1.1,z=.62){if(t<=0)return 0;const w=2*Math.PI*f,wd=w*Math.sqrt(1-z*z);return 1-Math.exp(-z*w*t)*(Math.cos(wd*t)+z*w/wd*Math.sin(wd*t));}
+const pad=n=>String(n).padStart(2,'0');
+function digits(el,str){if(el.dataset.v===str)return;el.dataset.v=str;el.innerHTML=[...str].map(c=>`<span>${c}</span>`).join('');}
+// t = seconds since page start, now = wall clock ms
+window.overlay=function(t,now){
+  const left=Math.max(0,TARGET-now), s=Math.floor(left/1000);
+  digits($('dd'),pad(Math.floor(s/86400)));digits($('hh'),pad(Math.floor(s%86400/3600)));
+  digits($('mm'),pad(Math.floor(s%3600/60)));digits($('ss'),pad(s%60));
+  // pane lowers onto the design
+  const d=spring(t-0.5);
+  const y=(1-d)*-105;
+  $('pane').style.transform=`translateY(${y}%)`;
+  // pulse dot
+  [['r1',0],['r2',0.8]].forEach(([id,o])=>{const ph=((t+o)%1.6)/1.6;const e=$(id);e.style.transform=`scale(${1+ph*2.6})`;e.style.opacity=(1-ph)*0.9;});
+  const b=1+0.12*Math.max(0,Math.sin(t*Math.PI/0.8));document.querySelector('.dot').style.transform=`scale(${b})`;
+  // moving highlight edge + sheen
+  const a=t*24+30;
+  if(0)$('pedge').style.background=`conic-gradient(from ${a}deg at 50% 50%,rgba(255,255,255,.18) 0deg,rgba(255,255,255,.95) 28deg,rgba(255,255,255,.18) 70deg,rgba(255,255,255,.12) 180deg,rgba(200,255,150,.8) 212deg,rgba(255,255,255,.15) 255deg,rgba(255,255,255,.18) 360deg)`;
+  $('sheen').style.transform=`translateX(${((t/9)%1)*160-80}%)`;
+};
+window.ready=Promise.all([document.fonts.ready,new Promise(r=>comp.addEventListener('load',()=>{(comp.contentWindow.ready||Promise.resolve()).then(r)}))]);
+window.seekAll=function(t,now){comp.contentWindow.seek&&comp.contentWindow.seek(t);overlay(t,now);};
+if(!RENDER){const t0=performance.now();(function f(){overlay((performance.now()-t0)/1000,Date.now());requestAnimationFrame(f);})();}
 </script>
 </body>
 </html>
