@@ -1,0 +1,13 @@
+CLAUDE.md
+DEPLOY.md
+HANDOVER_PROMPT.md
+start-claude-code.bat
+_tools/
+.omc/
+.claude/
+REPLY.md
+.playwright-mcp/
+CONTEXT.md
+NEXT.md
+NEXT2.md
+serve-local.bat
